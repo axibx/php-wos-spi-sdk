@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 899
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobShopPayPassPaycheckService
 {
     const specType = 'wos';
 
-    public function execute(WeimobShopPayPassPaycheckRequest $request) : WeimobShopPayPassPaycheckResponse;
+    public function invoke(WeimobShopPayPassPaycheckRequest $request) : WeimobShopPayPassPaycheckResponse;
 }
 
 class WeimobShopPayPassPaycheckRequest implements \JsonSerializable

@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 578
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobShopCouponPaasUseOnlineService
 {
     const specType = 'wos';
 
-    public function execute(WeimobShopCouponPaasUseOnlineRequest $request) : WeimobShopCouponPaasUseOnlineResponse;
+    public function invoke(WeimobShopCouponPaasUseOnlineRequest $request) : WeimobShopCouponPaasUseOnlineResponse;
 }
 
 class WeimobShopCouponPaasUseOnlineRequest implements \JsonSerializable

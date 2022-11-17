@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 580
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobShopCouponPaasBatchLockCouponService
 {
     const specType = 'wos';
 
-    public function execute(WeimobShopCouponPaasBatchLockCouponRequest $request) : WeimobShopCouponPaasBatchLockCouponResponse;
+    public function invoke(WeimobShopCouponPaasBatchLockCouponRequest $request) : WeimobShopCouponPaasBatchLockCouponResponse;
 }
 
 class WeimobShopCouponPaasBatchLockCouponRequest implements \JsonSerializable

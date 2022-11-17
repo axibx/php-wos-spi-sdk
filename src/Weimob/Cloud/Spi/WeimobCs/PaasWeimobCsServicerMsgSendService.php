@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 852
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobCsServicerMsgSendService
 {
     const specType = 'wos';
 
-    public function execute(WeimobCsServicerMsgSendRequest $request) : WeimobCsServicerMsgSendResponse;
+    public function invoke(WeimobCsServicerMsgSendRequest $request) : WeimobCsServicerMsgSendResponse;
 }
 
 class WeimobCsServicerMsgSendRequest implements \JsonSerializable

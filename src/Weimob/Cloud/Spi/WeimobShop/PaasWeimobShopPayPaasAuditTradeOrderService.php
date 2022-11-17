@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 1,169
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobShopPayPaasAuditTradeOrderService
 {
     const specType = 'wos';
 
-    public function execute(WeimobShopPayPaasAuditTradeOrderRequest $request) : WeimobShopPayPaasAuditTradeOrderResponse;
+    public function invoke(WeimobShopPayPaasAuditTradeOrderRequest $request) : WeimobShopPayPaasAuditTradeOrderResponse;
 }
 
 class WeimobShopPayPaasAuditTradeOrderRequest implements \JsonSerializable

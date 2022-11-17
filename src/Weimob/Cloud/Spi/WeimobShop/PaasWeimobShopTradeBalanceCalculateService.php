@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 1,433
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobShopTradeBalanceCalculateService
 {
     const specType = 'wos';
 
-    public function execute(WeimobShopTradeBalanceCalculateRequest $request) : WeimobShopTradeBalanceCalculateResponse;
+    public function invoke(WeimobShopTradeBalanceCalculateRequest $request) : WeimobShopTradeBalanceCalculateResponse;
 }
 
 class WeimobShopTradeBalanceCalculateRequest implements \JsonSerializable

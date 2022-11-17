@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 587
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasBosUserMembershipVerifyService
 {
     const specType = 'wos';
 
-    public function execute(BosUserMembershipVerifyRequest $request) : BosUserMembershipVerifyResponse;
+    public function invoke(BosUserMembershipVerifyRequest $request) : BosUserMembershipVerifyResponse;
 }
 
 class BosUserMembershipVerifyRequest implements \JsonSerializable

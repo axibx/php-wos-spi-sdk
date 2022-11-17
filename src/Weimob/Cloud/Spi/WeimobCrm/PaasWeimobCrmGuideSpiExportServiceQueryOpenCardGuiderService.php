@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 488
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobCrmGuideSpiExportServiceQueryOpenCardGuiderService
 {
     const specType = 'wos';
 
-    public function execute(WeimobCrmGuideSpiExportServiceQueryOpenCardGuiderRequest $request) : WeimobCrmGuideSpiExportServiceQueryOpenCardGuiderResponse;
+    public function invoke(WeimobCrmGuideSpiExportServiceQueryOpenCardGuiderRequest $request) : WeimobCrmGuideSpiExportServiceQueryOpenCardGuiderResponse;
 }
 
 class WeimobCrmGuideSpiExportServiceQueryOpenCardGuiderRequest implements \JsonSerializable

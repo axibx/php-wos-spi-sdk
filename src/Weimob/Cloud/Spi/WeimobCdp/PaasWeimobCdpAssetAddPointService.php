@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 614
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobCdpAssetAddPointService
 {
     const specType = 'wos';
 
-    public function execute(WeimobCdpAssetAddPointRequest $request) : WeimobCdpAssetAddPointResponse;
+    public function invoke(WeimobCdpAssetAddPointRequest $request) : WeimobCdpAssetAddPointResponse;
 }
 
 class WeimobCdpAssetAddPointRequest implements \JsonSerializable

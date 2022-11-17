@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 727
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobGuideCustomerBehaviorSearchService
 {
     const specType = 'wos';
 
-    public function execute(WeimobGuideCustomerBehaviorSearchRequest $request) : WeimobGuideCustomerBehaviorSearchResponse;
+    public function invoke(WeimobGuideCustomerBehaviorSearchRequest $request) : WeimobGuideCustomerBehaviorSearchResponse;
 }
 
 class WeimobGuideCustomerBehaviorSearchRequest implements \JsonSerializable

@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 507
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobCrmGoodsQuerySimpleBaseGoodsInfoListService
 {
     const specType = 'wos';
 
-    public function execute(WeimobCrmGoodsQuerySimpleBaseGoodsInfoListRequest $request) : WeimobCrmGoodsQuerySimpleBaseGoodsInfoListResponse;
+    public function invoke(WeimobCrmGoodsQuerySimpleBaseGoodsInfoListRequest $request) : WeimobCrmGoodsQuerySimpleBaseGoodsInfoListResponse;
 }
 
 class WeimobCrmGoodsQuerySimpleBaseGoodsInfoListRequest implements \JsonSerializable

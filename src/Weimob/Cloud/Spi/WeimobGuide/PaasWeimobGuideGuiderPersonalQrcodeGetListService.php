@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 1,375
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobGuideGuiderPersonalQrcodeGetListService
 {
     const specType = 'wos';
 
-    public function execute(WeimobGuideGuiderPersonalQrcodeGetListRequest $request) : WeimobGuideGuiderPersonalQrcodeGetListResponse;
+    public function invoke(WeimobGuideGuiderPersonalQrcodeGetListRequest $request) : WeimobGuideGuiderPersonalQrcodeGetListResponse;
 }
 
 class WeimobGuideGuiderPersonalQrcodeGetListRequest implements \JsonSerializable

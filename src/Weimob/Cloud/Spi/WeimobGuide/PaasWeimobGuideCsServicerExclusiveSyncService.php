@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 725
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobGuideCsServicerExclusiveSyncService
 {
     const specType = 'wos';
 
-    public function execute(WeimobGuideCsServicerExclusiveSyncRequest $request) : WeimobGuideCsServicerExclusiveSyncResponse;
+    public function invoke(WeimobGuideCsServicerExclusiveSyncRequest $request) : WeimobGuideCsServicerExclusiveSyncResponse;
 }
 
 class WeimobGuideCsServicerExclusiveSyncRequest implements \JsonSerializable

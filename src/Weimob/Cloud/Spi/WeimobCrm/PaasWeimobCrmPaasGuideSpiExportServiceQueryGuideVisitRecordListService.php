@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 487
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobCrmPaasGuideSpiExportServiceQueryGuideVisitRecordListService
 {
     const specType = 'wos';
 
-    public function execute(WeimobCrmPaasGuideSpiExportServiceQueryGuideVisitRecordListRequest $request) : WeimobCrmPaasGuideSpiExportServiceQueryGuideVisitRecordListResponse;
+    public function invoke(WeimobCrmPaasGuideSpiExportServiceQueryGuideVisitRecordListRequest $request) : WeimobCrmPaasGuideSpiExportServiceQueryGuideVisitRecordListResponse;
 }
 
 class WeimobCrmPaasGuideSpiExportServiceQueryGuideVisitRecordListRequest implements \JsonSerializable

@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 483
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobCrmTradeSpiExportServiceSearchOrderListService
 {
     const specType = 'wos';
 
-    public function execute(WeimobCrmTradeSpiExportServiceSearchOrderListRequest $request) : WeimobCrmTradeSpiExportServiceSearchOrderListResponse;
+    public function invoke(WeimobCrmTradeSpiExportServiceSearchOrderListRequest $request) : WeimobCrmTradeSpiExportServiceSearchOrderListResponse;
 }
 
 class WeimobCrmTradeSpiExportServiceSearchOrderListRequest implements \JsonSerializable

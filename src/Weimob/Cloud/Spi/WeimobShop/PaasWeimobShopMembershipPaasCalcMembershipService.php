@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 1,167
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobShopMembershipPaasCalcMembershipService
 {
     const specType = 'wos';
 
-    public function execute(WeimobShopMembershipPaasCalcMembershipRequest $request) : WeimobShopMembershipPaasCalcMembershipResponse;
+    public function invoke(WeimobShopMembershipPaasCalcMembershipRequest $request) : WeimobShopMembershipPaasCalcMembershipResponse;
 }
 
 class WeimobShopMembershipPaasCalcMembershipRequest implements \JsonSerializable

@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 885
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobCdpBalancesAdjustService
 {
     const specType = 'wos';
 
-    public function execute(WeimobCdpBalancesAdjustRequest $request) : WeimobCdpBalancesAdjustResponse;
+    public function invoke(WeimobCdpBalancesAdjustRequest $request) : WeimobCdpBalancesAdjustResponse;
 }
 
 class WeimobCdpBalancesAdjustRequest implements \JsonSerializable

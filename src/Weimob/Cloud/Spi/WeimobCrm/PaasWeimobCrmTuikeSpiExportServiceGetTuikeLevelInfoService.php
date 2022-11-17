@@ -7,13 +7,13 @@ use Com\Weimob\Cloud\Spi\Common\PaasResponseCode;
 /**
  * @id 485
  * @author weimobcloud
- * @create 2022年11月16日
+ * @create 2022年11月17日
  */
 interface PaasWeimobCrmTuikeSpiExportServiceGetTuikeLevelInfoService
 {
     const specType = 'wos';
 
-    public function execute(WeimobCrmTuikeSpiExportServiceGetTuikeLevelInfoRequest $request) : WeimobCrmTuikeSpiExportServiceGetTuikeLevelInfoResponse;
+    public function invoke(WeimobCrmTuikeSpiExportServiceGetTuikeLevelInfoRequest $request) : WeimobCrmTuikeSpiExportServiceGetTuikeLevelInfoResponse;
 }
 
 class WeimobCrmTuikeSpiExportServiceGetTuikeLevelInfoRequest implements \JsonSerializable
