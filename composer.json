@@ -1,8 +1,8 @@
 {
-    "name": "weimob-cloud/php-xinyun-spi-sdk",
+    "name": "weimob-cloud/php-wos-spi-sdk",
     "type": "library",
     "license": "MIT",
-    "description": "WeimobCloud PHP Xinyun Spi Sdk",
+    "description": "WeimobCloud PHP Wos Spi Sdk",
     "authors": [
         {
             "name": "junwei.ye",
@@ -32,7 +32,7 @@
     "repositories": {
         "0": {
             "type": "vcs",
-            "url": "git@github.com:axibx/php-xinyun-spi-sdk.git"
+            "url": "git@github.com:axibx/php-wos-spi-sdk.git"
         },
         "packagist": {
             "type": "composer",
